@@ -1,0 +1,27 @@
+GET http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/6219607874ef893c76eb250c
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name" : "Anupam",
+    "subscribedToChannel" : "ESPN"
+}
+
+###
+
+PATCH http://localhost:3000/subscribers/6219607874ef893c76eb250c
+Content-Type: application/json
+
+{
+    "name" : "Anupam Nath"
+}
+
+
+###
+
+DELETE http://localhost:3000/subscribers/6219607874ef893c76eb250c
